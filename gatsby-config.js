@@ -3,17 +3,20 @@
  *
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
  */
-
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `D.S. Portfolio`,
+    description: `Welcome to the portfolio of Deniss Simonaits - Full Stack Web Developer & Designer`,
+    author: `@dsimonaits`,
+    siteUrl: `https://github.com/dsimonaits/myPortfolio`,
   },
+  graphqlTypegen: true,
   plugins: [
     `gatsby-plugin-image`,
     {
@@ -28,8 +31,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `D.S. Portfolio`,
+        short_name: `D.S.`,
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website
@@ -37,6 +40,14 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: "gatsby-source-storyblok",
+      options: {
+        accessToken: process.env.GATSBY_PREVIEW_STORYBLOK,
+        version: "draft",
+        localAssets: true,
       },
     },
   ],

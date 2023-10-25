@@ -29,7 +29,8 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+        "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 8000 --cert localhost.pem --key localhost-key.pem"
   },
   "repository": {
     "type": "git",
