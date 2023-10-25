@@ -5,6 +5,10 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@chakra-ui/react": "^2.8.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "framer-motion": "^10.16.4",
     "gatsby": "^5.12.4",
     "gatsby-plugin-image": "^3.12.0",
     "gatsby-plugin-manifest": "^5.12.0",
@@ -30,7 +34,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-        "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 8000 --cert localhost.pem --key localhost-key.pem"
+    "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 8000 --cert localhost.pem --key localhost-key.pem"
   },
   "repository": {
     "type": "git",
