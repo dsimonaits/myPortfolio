@@ -1,0 +1,8 @@
+.blurContainer {
+  display: block;
+  position: relative;
+  border-width: 2px;
+  border-style: "solid";
+  border-radius: "10px";
+  border-color: white;
+}
