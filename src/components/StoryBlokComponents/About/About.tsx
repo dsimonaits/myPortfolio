@@ -1,6 +1,6 @@
 import React from "react"
 import MainContainer from "../../Container/Container"
-import { Box, Image, Text, Stack } from "@chakra-ui/react"
+import { Box, Image, Text, Stack, Heading } from "@chakra-ui/react"
 import Section from "../../Section/Section"
 
 const About = ({ blok }) => {
@@ -12,15 +12,24 @@ const About = ({ blok }) => {
           direction={["column", "column", "row"]}
           gap={["20px", "40px", "40px"]}
         >
-          <Box flex="1" justifyContent="center">
+          <Box
+            flex="1"
+            display="flex"
+            flexDir="column"
+            justifyContent="center"
+            alignItems="center"
+          >
             <Image
               mx="auto"
               src={blok.myImage.filename}
               fallbackSrc="https://via.placeholder.com/150"
               alt="Deniss Simonaits"
               borderRadius="full"
-              boxSize={["150px", "250px", "250px"]}
+              boxSize={["100px", "150px", "250px"]}
             />
+            <Heading as="h3" size="md" mt="10px">
+              {blok.title}
+            </Heading>
           </Box>
           <Box flex="1">
             <Text>{blok.aboutMe}</Text>
