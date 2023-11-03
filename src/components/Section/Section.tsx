@@ -2,13 +2,14 @@ import { Box } from "@chakra-ui/react"
 import React, { FC } from "react"
 
 interface ISection {
+  id?: string
   children: React.ReactNode
   style?: object
 }
 
-const Section: FC<ISection> = ({ children, style }) => {
+const Section: FC<ISection> = ({ id, children, style }) => {
   return (
-    <Box as="section" py={["40px", "40px", "40px"]} {...style}>
+    <Box id={id} as="section" py={["40px", "40px", "40px"]} {...style}>
       {children}
     </Box>
   )
