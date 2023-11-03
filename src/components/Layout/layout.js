@@ -5,25 +5,31 @@ import { storyblokInit, apiPlugin } from "gatsby-source-storyblok"
 import Page from "../StoryBlokComponents/Page/page"
 
 import Header from "../Header/Header"
-import { Box } from "@chakra-ui/react"
+import { Box, Stack, StackDivider } from "@chakra-ui/react"
 import Donut from "../../images/SuperToroid-Purple-Glossy.png"
 import "./layout.module.css"
+import About from "../StoryBlokComponents/About/About"
+import { Helmet } from "react-helmet"
+import Projects from "../StoryBlokComponents/Projects/Projects"
 
 storyblokInit({
   accessToken: process.env.GATSBY_PREVIEW_STORYBLOK,
   apiOptions: {
-    region: "eu", // Pass this key/value if your space was created under US region
+    region: "eu",
   },
   use: [apiPlugin],
   components: {
     page: Page,
+    about: About,
   },
 })
 
 const Layout = ({ children }) => {
   return (
     <>
-      {" "}
+      <Helmet>
+        <title>D.S. Portfolio</title>
+      </Helmet>{" "}
       <Box position="absolute" top="-10px" right="-10px">
         <img src={Donut} alt="Purple donut" width="100px" />
       </Box>
@@ -38,11 +44,12 @@ const Layout = ({ children }) => {
         filter="blur(70px)"
       />
       <Box
-        height="70vh"
+        mh="80vh"
+        overflow="auto"
         position="relative"
         backgroundColor="rgb(255,255,255, .05)"
         borderRadius="10px"
-        py={["40px", "40px", "20px"]}
+        py={["20px", "40px", "40px"]}
         zIndex="99"
         backdropFilter="blur(10px)"
         _after={{
@@ -65,7 +72,19 @@ const Layout = ({ children }) => {
         }}
       >
         <Header />
-        {children}
+        <Stack
+          divider={
+            <StackDivider
+              borderColor="white.100"
+              px={[null, "10px", "10px"]}
+              py={["10px", null, null]}
+            />
+          }
+        >
+          {children}
+          {/* <About />
+          <Projects /> */}
+        </Stack>
       </Box>
     </>
   )
