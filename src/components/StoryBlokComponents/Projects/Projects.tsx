@@ -8,36 +8,31 @@ import {
   Image,
   Text,
   Heading,
+  UnorderedList,
+  ListItem,
 } from "@chakra-ui/react"
+import { StoryblokComponent, storyblokEditable } from "gatsby-source-storyblok"
 
-const Projects = () => {
+const Projects = ({ blok }) => {
+  console.log(blok)
   return (
     <Section id="projects">
       <MainContainer>
-        <Heading as="h3" size="lg" mb="20px" textAlign="center">
-          My projects
+        <Heading as="h2" size="lg" textAlign="center" mb="20px">
+          Projects
         </Heading>
-        <Stack
-          direction={["column", "column", "row"]}
-          gap={["20px", "40px", "40px"]}
+        <UnorderedList
+          {...storyblokEditable(blok)}
+          key={blok._uid}
+          data-test="grid"
+          listStyleType="none"
         >
-          <Box flex="1" justifyContent="center">
-            <Image
-              mx="auto"
-              src=""
-              fallbackSrc="https://via.placeholder.com/150"
-              alt="Deniss Simonaits"
-            />
-          </Box>
-          <Box flex="1">
-            <Text>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id
-              amet quisquam, quidem quos soluta perferendis molestias recusandae
-              cumque quaerat assumenda sapiente eum veritatis illo ipsa
-              distinctio. Consectetur, dicta adipisci.
-            </Text>
-          </Box>
-        </Stack>
+          {blok.projects.map(blok => (
+            <ListItem key={blok._uid} className="text-center flex-auto px-6">
+              <StoryblokComponent blok={blok} />
+            </ListItem>
+          ))}
+        </UnorderedList>
       </MainContainer>
     </Section>
   )
