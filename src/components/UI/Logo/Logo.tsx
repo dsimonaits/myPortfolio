@@ -11,7 +11,7 @@ const Logo = () => {
           textDecorationStyle: "none",
         }}
       >
-        <Heading fontWeight="bold" fontSize="15">
+        <Heading fontWeight="bold" fontSize="xl">
           D. S. | Portfolio
         </Heading>
       </Box>
