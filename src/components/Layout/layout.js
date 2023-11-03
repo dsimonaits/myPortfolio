@@ -11,6 +11,7 @@ import "./layout.module.css"
 import About from "../StoryBlokComponents/About/About"
 import { Helmet } from "react-helmet"
 import Projects from "../StoryBlokComponents/Projects/Projects"
+import Project from "../StoryBlokComponents/Projects/Project"
 
 storyblokInit({
   accessToken: process.env.GATSBY_PREVIEW_STORYBLOK,
@@ -21,6 +22,8 @@ storyblokInit({
   components: {
     page: Page,
     about: About,
+    projects: Projects,
+    project: Project,
   },
 })
 
