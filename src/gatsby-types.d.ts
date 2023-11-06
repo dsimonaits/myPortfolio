@@ -1587,8 +1587,12 @@ type Query_storyblokEntryArgs = {
   content: InputMaybe<StringQueryOperatorInput>;
   created_at: InputMaybe<DateQueryOperatorInput>;
   field_component: InputMaybe<StringQueryOperatorInput>;
+  field_subtitle_string: InputMaybe<StringQueryOperatorInput>;
+  field_teaser_string: InputMaybe<StringQueryOperatorInput>;
+  field_title_string: InputMaybe<StringQueryOperatorInput>;
   first_published_at: InputMaybe<DateQueryOperatorInput>;
   full_slug: InputMaybe<StringQueryOperatorInput>;
+  gatsbyPath: InputMaybe<StringQueryOperatorInput>;
   group_id: InputMaybe<StringQueryOperatorInput>;
   id: InputMaybe<StringQueryOperatorInput>;
   internal: InputMaybe<InternalFilterInput>;
@@ -2417,8 +2421,12 @@ type StoryblokEntry = Node & {
   readonly content: Maybe<Scalars['String']>;
   readonly created_at: Maybe<Scalars['Date']>;
   readonly field_component: Maybe<Scalars['String']>;
+  readonly field_subtitle_string: Maybe<Scalars['String']>;
+  readonly field_teaser_string: Maybe<Scalars['String']>;
+  readonly field_title_string: Maybe<Scalars['String']>;
   readonly first_published_at: Maybe<Scalars['Date']>;
   readonly full_slug: Maybe<Scalars['String']>;
+  readonly gatsbyPath: Maybe<Scalars['String']>;
   readonly group_id: Maybe<Scalars['String']>;
   readonly id: Scalars['ID'];
   readonly internal: Internal;
@@ -2449,6 +2457,11 @@ type StoryblokEntry_first_published_atArgs = {
   formatString: InputMaybe<Scalars['String']>;
   fromNow: InputMaybe<Scalars['Boolean']>;
   locale: InputMaybe<Scalars['String']>;
+};
+
+
+type StoryblokEntry_gatsbyPathArgs = {
+  filePath: InputMaybe<Scalars['String']>;
 };
 
 
@@ -2509,8 +2522,12 @@ type StoryblokEntryFieldSelector = {
   readonly content: InputMaybe<FieldSelectorEnum>;
   readonly created_at: InputMaybe<FieldSelectorEnum>;
   readonly field_component: InputMaybe<FieldSelectorEnum>;
+  readonly field_subtitle_string: InputMaybe<FieldSelectorEnum>;
+  readonly field_teaser_string: InputMaybe<FieldSelectorEnum>;
+  readonly field_title_string: InputMaybe<FieldSelectorEnum>;
   readonly first_published_at: InputMaybe<FieldSelectorEnum>;
   readonly full_slug: InputMaybe<FieldSelectorEnum>;
+  readonly gatsbyPath: InputMaybe<FieldSelectorEnum>;
   readonly group_id: InputMaybe<FieldSelectorEnum>;
   readonly id: InputMaybe<FieldSelectorEnum>;
   readonly internal: InputMaybe<InternalFieldSelector>;
@@ -2532,8 +2549,12 @@ type StoryblokEntryFilterInput = {
   readonly content: InputMaybe<StringQueryOperatorInput>;
   readonly created_at: InputMaybe<DateQueryOperatorInput>;
   readonly field_component: InputMaybe<StringQueryOperatorInput>;
+  readonly field_subtitle_string: InputMaybe<StringQueryOperatorInput>;
+  readonly field_teaser_string: InputMaybe<StringQueryOperatorInput>;
+  readonly field_title_string: InputMaybe<StringQueryOperatorInput>;
   readonly first_published_at: InputMaybe<DateQueryOperatorInput>;
   readonly full_slug: InputMaybe<StringQueryOperatorInput>;
+  readonly gatsbyPath: InputMaybe<StringQueryOperatorInput>;
   readonly group_id: InputMaybe<StringQueryOperatorInput>;
   readonly id: InputMaybe<StringQueryOperatorInput>;
   readonly internal: InputMaybe<InternalFilterInput>;
@@ -2596,8 +2617,12 @@ type StoryblokEntrySortInput = {
   readonly content: InputMaybe<SortOrderEnum>;
   readonly created_at: InputMaybe<SortOrderEnum>;
   readonly field_component: InputMaybe<SortOrderEnum>;
+  readonly field_subtitle_string: InputMaybe<SortOrderEnum>;
+  readonly field_teaser_string: InputMaybe<SortOrderEnum>;
+  readonly field_title_string: InputMaybe<SortOrderEnum>;
   readonly first_published_at: InputMaybe<SortOrderEnum>;
   readonly full_slug: InputMaybe<SortOrderEnum>;
+  readonly gatsbyPath: InputMaybe<SortOrderEnum>;
   readonly group_id: InputMaybe<SortOrderEnum>;
   readonly id: InputMaybe<SortOrderEnum>;
   readonly internal: InputMaybe<InternalSortInput>;
