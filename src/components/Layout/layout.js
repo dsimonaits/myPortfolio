@@ -1,10 +1,8 @@
 import React from "react"
 import { storyblokInit, apiPlugin } from "gatsby-source-storyblok"
 import Page from "../StoryBlokComponents/Page/page"
-import { Stack, StackDivider } from "@chakra-ui/react"
 import "./layout.module.css"
 import About from "../StoryBlokComponents/About/About"
-import { Helmet } from "react-helmet"
 import Article from "../StoryBlokComponents/Article/Article"
 import AllArticles from "../StoryBlokComponents/AllArticles/AllArticles"
 import MainContainer from "../Container/Container"
@@ -30,9 +28,6 @@ storyblokInit({
 const Layout = ({ children }) => {
   return (
     <>
-      <Helmet>
-        <title>D.S. Portfolio</title>
-      </Helmet>{" "}
       <MainContainer>{children}</MainContainer>
     </>
   )
