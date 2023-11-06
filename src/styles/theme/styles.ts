@@ -6,7 +6,10 @@ export const MainTheme = extendTheme({
       "html, body": {
         color: "white",
         backgroundColor: "black",
-        padding: ["10px", "30px", "30px"],
+        pt: ["10px", "30px", "30px"],
+      },
+      p: {
+        mb: "10px",
       },
     },
   },
@@ -16,6 +19,13 @@ export const MainTheme = extendTheme({
       100: "white",
       500: "white",
       600: "white",
+    },
+    secondary: {
+      50: "#FEFCED",
+      100: "#FAF2B5",
+      200: "#F0D200",
+      400: "#E2B2FF",
+      600: "#A767FF",
     },
   },
   fonts: {

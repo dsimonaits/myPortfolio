@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { Box, Heading, Text } from "@chakra-ui/react"
+import { Box, Heading, Tag, Text } from "@chakra-ui/react"
 
 const Logo = () => {
   return (
@@ -11,9 +11,9 @@ const Logo = () => {
           textDecorationStyle: "none",
         }}
       >
-        <Heading fontWeight="bold" fontSize="xl">
-          D. S. | Portfolio
-        </Heading>
+        <Tag fontWeight="bold" size="lg">
+          D. S. | Bringing Imagination to Digital Life
+        </Tag>
       </Box>
     </Link>
   )

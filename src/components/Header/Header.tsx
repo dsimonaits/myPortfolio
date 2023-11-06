@@ -27,27 +27,6 @@ const Header = () => {
         <MainContainer>
           <Flex justifyContent="space-between" alignItems="center">
             <Logo />
-            <Hide breakpoint="(max-width: 768px)">
-              <HStack spacing="30px">{/* Navigation Links */}</HStack>
-            </Hide>
-            <Show breakpoint="(max-width: 768px)">
-              <Menu>
-                <MenuButton
-                  as={IconButton}
-                  aria-label="Options"
-                  icon={<HamburgerIcon w="40px" h="40px" />}
-                  variant="unstyled"
-                />
-                <MenuList
-                  display="flex"
-                  p="20px"
-                  flexDirection="column"
-                  alignItems="center"
-                >
-                  {/* NavigationLinks */}
-                </MenuList>
-              </Menu>
-            </Show>
           </Flex>
         </MainContainer>
       </Section>
