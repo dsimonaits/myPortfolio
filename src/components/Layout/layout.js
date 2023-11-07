@@ -12,6 +12,8 @@ import SkillsList from "../StoryBlokComponents/SkillsList/SkillsList"
 import Skill from "../StoryBlokComponents/Skill/Skill"
 import Footer from "../StoryBlokComponents/Footer/Footer.tsx"
 import Contact from "../StoryBlokComponents/Contact/Contact.tsx"
+import SocialLink from "../StoryBlokComponents/SocialLink/SocialLink.tsx"
+import socialLinkList from "../StoryBlokComponents/SocialLinkList/SocialLinkList.tsx"
 
 storyblokInit({
   accessToken: process.env.GATSBY_PREVIEW_STORYBLOK,
@@ -28,6 +30,8 @@ storyblokInit({
     skill: Skill,
     footer: Footer,
     contact: Contact,
+    socialLink: SocialLink,
+    socialLinkList: socialLinkList,
   },
 })
 
