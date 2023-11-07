@@ -27,6 +27,35 @@ module.exports = {
   graphqlTypegen: true,
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`, `avif`], // Include AVIF format for better compression
+          placeholder: `dominantColor`,
+          quality: 85, // Adjust image quality as needed
+          breakpoints: [750, 1080, 1366, 1920], // Define your desired breakpoints
+          backgroundColor: `transparent`,
+          blurredOptions: {
+            toFormat: "webp", // Use webp format for blurred images
+            quality: 20, // Adjust quality for blurred images
+          },
+          jpgOptions: {
+            quality: 85, // Adjust JPG quality as needed
+          },
+          pngOptions: {
+            quality: 85, // Adjust PNG quality as needed
+          },
+          webpOptions: {
+            quality: 85, // Adjust WebP quality as needed
+          },
+          avifOptions: {
+            quality: 85, // Adjust AVIF quality as needed
+          },
+        },
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -34,8 +63,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
