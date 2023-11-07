@@ -48,11 +48,12 @@ const About = ({ blok }: AboutStoryblok) => {
             />
             <Image
               mx="auto"
-              src={blok.myImage.filename}
+              src={`${blok.myImage.filename}/m/filters:format(webp)
+`}
               fallbackSrc="https://via.placeholder.com/150"
               alt="Deniss Simonaits"
               borderRadius="full"
-              boxSize={["100px", "150px", "250px"]}
+              boxSize={["200px", "200px", "300px"]}
               zIndex="99"
             />
             <Tag size="lg" mt="15px" zIndex="99">

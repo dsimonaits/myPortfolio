@@ -17,7 +17,7 @@ const Article = ({ blok }: ArticleStoryblok) => {
         </Heading>
         <Image
           alt={blok.image.alt}
-          src={blok.image.filename}
+          src={`${blok.image.filename}/m/filters:format(webp)`}
           maxW={["300px", "600px", "800px"]}
           mb="10px"
         />

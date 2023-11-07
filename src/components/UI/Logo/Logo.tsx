@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { Box, Heading, Tag, Text } from "@chakra-ui/react"
+import { Box, Tag } from "@chakra-ui/react"
 
 const Logo = () => {
   return (

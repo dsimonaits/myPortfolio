@@ -42,7 +42,7 @@ const ArticleTeaser = ({ article, slug, index }: ArticleStoryblok) => {
             <Image
               mx="auto"
               rounded="15px"
-              src={article.image.filename}
+              src={`${article.image.filename}/m/filters:format(webp)`}
               fallbackSrc="https://via.placeholder.com/150"
               alt={article.title}
               maxW="50%"
@@ -54,7 +54,7 @@ const ArticleTeaser = ({ article, slug, index }: ArticleStoryblok) => {
             <Image
               mx="auto"
               rounded="15px"
-              src={article.image.filename}
+              src={`${article.image.filename}/m/filters:format(webp)`}
               fallbackSrc="https://via.placeholder.com/150"
               alt={article.title}
               maxW="50%"
