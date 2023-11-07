@@ -40,8 +40,8 @@ const About = ({ blok }: AboutStoryblok) => {
               top="10%"
               left="10%"
               background="linear-gradient(151deg, rgba(0,98,255,0) 0%, rgba(57,85,242,0.22030237580993517) 21%, rgba(255,41,195,1) 100%)"
-              width="400px"
-              height="400px"
+              width={["200px", "400px", "400px"]}
+              height={["200px", "400px", "400px"]}
               borderRadius="50%"
               filter="blur(70px)"
               zIndex="0"
