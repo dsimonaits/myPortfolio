@@ -59,7 +59,7 @@ const AllArticles = ({ blok }: AllArticlesStoryblok) => {
 
   return (
     <Section>
-      <MainContainer>
+      <MainContainer style={{ zIndex: "99" }}>
         <VStack>
           <Tag size="lg" p="20px" mb="-20px" mr="50%">
             {blok.title}
