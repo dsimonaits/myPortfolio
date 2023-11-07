@@ -18,9 +18,6 @@ if (process.env.STAGING) {
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  flags: {
-    PARTIAL_HYDRATION: true,
-  },
   siteMetadata: {
     title: `D.S. Portfolio`,
     description: `Welcome to the portfolio of Deniss Simonaits - Full Stack Web Developer & Designer`,
