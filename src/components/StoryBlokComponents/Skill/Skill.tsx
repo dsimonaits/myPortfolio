@@ -6,14 +6,18 @@ const Skill = ({ blok }: SkillStoryblok) => {
   return (
     <VStack>
       <Box
-        boxSize="90px"
+        boxSize={["70px", "80px", "90px"]}
         borderRadius="full"
         bg="black"
         display="flex"
         justifyContent="center"
         alignItems="center"
       >
-        <Image src={blok.icon.filename} alt={blok.name} width="60px" />
+        <Image
+          src={blok.icon.filename}
+          alt={blok.name}
+          width={["40px", "50px", "60px"]}
+        />
       </Box>
       <Text>{blok.name}</Text>
     </VStack>
