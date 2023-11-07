@@ -10,7 +10,9 @@ const Footer = ({ blok }: FooterStoryblok) => {
   return (
     <>
       <Section style={{ p: ["0px", "0px", "0px"] }}>
-        <MainContainer style={{ display: "flex", flexDirection: "column" }}>
+        <MainContainer
+          style={{ display: "flex", flexDirection: "column", gap: "10px" }}
+        >
           <Tag size="lg" p="20px" mb="-20px" mx="auto">
             Contact Me
           </Tag>
