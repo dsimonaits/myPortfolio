@@ -34,7 +34,7 @@ const ArticleTeaser = ({ article, slug, index }: ArticleStoryblok) => {
                     display="block"
                     color="secondary.400"
                   >
-                    Read More <ExternalLinkIcon mx="2px" />
+                    Read More over {article.title} <ExternalLinkIcon mx="2px" />
                   </Link>
                 </Box>
               </VStack>
@@ -82,7 +82,7 @@ const ArticleTeaser = ({ article, slug, index }: ArticleStoryblok) => {
                     display="block"
                     color="secondary.400"
                   >
-                    Read More <ExternalLinkIcon mx="2px" />
+                    Read More over {article.title} <ExternalLinkIcon mx="2px" />
                   </Link>
                 </Box>
               </VStack>
