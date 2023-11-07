@@ -6,7 +6,7 @@ import {
   AccordionIcon,
   AccordionPanel,
 } from "@chakra-ui/accordion"
-import { Box, HStack, Stack } from "@chakra-ui/layout"
+import { Box, Stack } from "@chakra-ui/layout"
 
 import { render } from "storyblok-rich-text-react-renderer"
 import { ContactStoryblok } from "../../../../component-types-sb"
