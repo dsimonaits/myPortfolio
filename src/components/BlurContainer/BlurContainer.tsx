@@ -10,6 +10,10 @@ const BlurContainer: FC<IBlurContainer> = ({ children, style }) => {
   return (
     <Box
       flex="1"
+      display="flex"
+      flexDir="column"
+      justifyContent="center"
+      gap="20px"
       px={["20px"]}
       py={["20px", "20px", "20px"]}
       overflow="auto"
