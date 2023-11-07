@@ -4,7 +4,7 @@
       "name": "about",
       "display_name": null,
       "created_at": "2023-11-03T13:58:15.064Z",
-      "updated_at": "2023-11-06T12:16:26.649Z",
+      "updated_at": "2023-11-06T21:23:51.693Z",
       "id": 4831959,
       "schema": {
         "myImage": {
@@ -24,6 +24,9 @@
           "description": "",
           "default_value": "",
           "pos": 2
+        },
+        "moreAbout": {
+          "type": "richtext"
         }
       },
       "image": null,
@@ -101,6 +104,58 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "Article",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "contact",
+      "display_name": null,
+      "created_at": "2023-11-07T12:40:18.887Z",
+      "updated_at": "2023-11-07T12:41:10.033Z",
+      "id": 4848138,
+      "schema": {
+        "heading": {
+          "type": "text"
+        },
+        "contactMe": {
+          "type": "richtext"
+        },
+        "contactMore": {
+          "type": "richtext"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "contact",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
+      "name": "footer",
+      "display_name": null,
+      "created_at": "2023-11-07T12:44:55.332Z",
+      "updated_at": "2023-11-07T12:45:28.328Z",
+      "id": 4848184,
+      "schema": {
+        "children": {
+          "type": "bloks"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "footer",
       "component_group_uuid": null,
       "color": null,
       "icon": null
