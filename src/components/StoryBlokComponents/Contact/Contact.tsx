@@ -6,7 +6,7 @@ import {
   AccordionIcon,
   AccordionPanel,
 } from "@chakra-ui/accordion"
-import { Box, HStack, Text } from "@chakra-ui/layout"
+import { Box, HStack, Stack } from "@chakra-ui/layout"
 
 import { render } from "storyblok-rich-text-react-renderer"
 import { ContactStoryblok } from "../../../../component-types-sb"
@@ -17,7 +17,7 @@ const Contact = ({ blok }: ContactStoryblok) => {
 
   return (
     <>
-      <HStack>
+      <Stack direction={["column", "row", "row"]}>
         <Box flex="1">{render(contactMe)}</Box>
         <Accordion allowToggle flex="1">
           <AccordionItem>
@@ -32,7 +32,7 @@ const Contact = ({ blok }: ContactStoryblok) => {
             <AccordionPanel>{render(contactMoreInfo)}</AccordionPanel>
           </AccordionItem>
         </Accordion>
-      </HStack>
+      </Stack>
     </>
   )
 }
