@@ -29,7 +29,7 @@ const Article = ({ blok }: ArticleStoryblok) => {
             color="secondary.400"
             isExternal
           >
-            Open Demo page <ExternalLinkIcon mx="2px" />
+            Open Demo page - {blok.title} <ExternalLinkIcon mx="2px" />
           </Link>
           <Box lineHeight="150%">{render(richText)}</Box>
         </Box>
