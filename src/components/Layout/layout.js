@@ -10,6 +10,8 @@ import AllArticles from "../StoryBlokComponents/AllArticles/AllArticles"
 import MainContainer from "../Container/Container"
 import SkillsList from "../StoryBlokComponents/SkillsList/SkillsList"
 import Skill from "../StoryBlokComponents/Skill/Skill"
+import Footer from "../StoryBlokComponents/Footer/Footer.tsx"
+import Contact from "../StoryBlokComponents/Contact/Contact.tsx"
 
 storyblokInit({
   accessToken: process.env.GATSBY_PREVIEW_STORYBLOK,
@@ -24,6 +26,8 @@ storyblokInit({
     "all-articles": AllArticles,
     "skills-list": SkillsList,
     skill: Skill,
+    footer: Footer,
+    contact: Contact,
   },
 })
 
