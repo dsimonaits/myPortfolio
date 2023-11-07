@@ -3,7 +3,6 @@ import { SkillStoryblok } from "../../../../component-types-sb"
 import { Text, Image, Box, VStack } from "@chakra-ui/react"
 
 const Skill = ({ blok }: SkillStoryblok) => {
-  console.log(blok)
   return (
     <VStack>
       <Box

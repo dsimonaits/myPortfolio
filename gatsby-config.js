@@ -1,11 +1,19 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable no-undef */
 /**
  * Configure your Gatsby site with this file.
  *
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
  */
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+if (process.env.STAGING) {
+  require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}.staging`,
+  })
+} else {
+  require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}`,
+  })
+}
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
@@ -22,7 +30,6 @@ module.exports = {
   graphqlTypegen: true,
   plugins: [
     `gatsby-plugin-image`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import * as React from "react"
 import { storyblokEditable } from "gatsby-source-storyblok"
 import MainContainer from "../../Container/Container"

@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-undef */
 import React from "react"
 import { storyblokInit, apiPlugin } from "gatsby-source-storyblok"
 import Page from "../StoryBlokComponents/Page/page"

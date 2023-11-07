@@ -1,3 +1,4 @@
+"use client"
 import React from "react"
 import ArticleTeaser from "../ArticleTeaser/ArticleTeaser"
 import { storyblokEditable } from "gatsby-source-storyblok"

@@ -5,7 +5,6 @@ import { ArticleStoryblok } from "../../../../component-types-sb"
 import BlurContainer from "../../BlurContainer/BlurContainer"
 
 const ArticleTeaser = ({ article, slug, index }: ArticleStoryblok) => {
-  console.log(index)
   return (
     <>
       <HStack display="flex" alignItems="flex-start" _notLast={{ mb: "40px" }}>

@@ -1,6 +1,5 @@
 import { Container } from "@chakra-ui/react"
 import React, { FC } from "react"
-import { Divider } from "@chakra-ui/react"
 
 interface ICon {
   children: React.ReactNode
