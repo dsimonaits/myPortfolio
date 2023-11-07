@@ -24,7 +24,6 @@ const SkillsList = ({ blok }: SkillsListStoryblok) => {
               data-test="grid"
               display="flex"
               flexWrap="wrap"
-              // flexDir={["column", "row", "row"]}
             >
               {blok.list.map((blok: SkillStoryblok) => (
                 <ListItem key={blok._uid} flex="1">
