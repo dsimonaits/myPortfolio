@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { StoryblokStory } from "storyblok-generate-ts"
 
 export interface AssetStoryblok {
@@ -24,6 +26,7 @@ export interface AboutStoryblok {
   myImage?: AssetStoryblok
   title?: string
   aboutMe?: RichtextStoryblok
+  moreAbout?: RichtextStoryblok
   _uid: string
   component: "about"
   [k: string]: any
@@ -96,8 +99,33 @@ export interface ArticleStoryblok {
     MultilinkStoryblok,
     { linktype?: "email" } | { linktype?: "asset" }
   >
-  _uid?: string
-  component?: "article"
+  _uid: string
+  component: "article"
+  [k: string]: any
+}
+
+export interface ContactStoryblok {
+  heading?: string
+  contactMe?: RichtextStoryblok
+  contactMore?: RichtextStoryblok
+  _uid: string
+  component: "contact"
+  [k: string]: any
+}
+
+export interface FooterStoryblok {
+  children?: (
+    | AboutStoryblok
+    | AllArticlesStoryblok
+    | ArticleStoryblok
+    | ContactStoryblok
+    | FooterStoryblok
+    | PageStoryblok
+    | SkillStoryblok
+    | SkillsListStoryblok
+  )[]
+  _uid: string
+  component: "footer"
   [k: string]: any
 }
 
@@ -106,6 +134,8 @@ export interface PageStoryblok {
     | AboutStoryblok
     | AllArticlesStoryblok
     | ArticleStoryblok
+    | ContactStoryblok
+    | FooterStoryblok
     | PageStoryblok
     | SkillStoryblok
     | SkillsListStoryblok
@@ -129,6 +159,8 @@ export interface SkillsListStoryblok {
     | AboutStoryblok
     | AllArticlesStoryblok
     | ArticleStoryblok
+    | ContactStoryblok
+    | FooterStoryblok
     | PageStoryblok
     | SkillStoryblok
     | SkillsListStoryblok
