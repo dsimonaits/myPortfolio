@@ -22,6 +22,7 @@
     "isomorphic-fetch": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.11.0",
     "react-scroll": "^1.9.0",
     "storyblok-rich-text-react-renderer": "^2.9.0"
@@ -71,9 +72,8 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 8000 --cert localhost.pem --key localhost-key.pem",
-       "storyblok-pull":"storyblok pull-components --space 259099",
+    "storyblok-pull": "storyblok pull-components --space 259099",
     "generate-sb-types": "storyblok-generate-ts source=./components.259099.json target=./component-types-sb"
- 
   },
   "repository": {
     "type": "git",
