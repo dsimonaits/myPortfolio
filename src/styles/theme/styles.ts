@@ -34,19 +34,3 @@ export const MainTheme = extendTheme({
   },
   components: {},
 })
-
-// export const ReactTheme = extendTheme({
-//   colors: {
-//     quizMain: {
-//       50: "#61DBFB",
-//       100: "#61DBFB",
-//       500: "#61DBFB",
-//       600: "#61DBFB",
-//     },
-//   },
-//   fonts: {
-//     heading: "Poppins, sans-serif",
-//     body: "Roboto, sans-serif;",
-//   },
-//   components: {},
-// });
