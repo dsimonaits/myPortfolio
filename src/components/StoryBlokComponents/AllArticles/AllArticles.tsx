@@ -74,6 +74,8 @@ const AllArticles = ({ blok }: AllArticlesStoryblok) => {
                       key={article.node.uuid}
                       slug={article.node.slug}
                       index={index}
+                      _uid={""}
+                      component={"article"}
                     />
                   )
                 })}
