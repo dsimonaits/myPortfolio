@@ -6,6 +6,7 @@ import { StoryblokStory } from "gatsby-source-storyblok"
 import Layout from "../components/Layout/layout"
 import { ChakraProvider } from "@chakra-ui/react"
 import { MainTheme } from "../styles/theme/styles"
+import Seo from "../components/seo"
 
 const IndexPage = ({ data }) => {
   if (typeof data.storyblokEntry.content === "string")
@@ -19,6 +20,8 @@ const IndexPage = ({ data }) => {
     </ChakraProvider>
   )
 }
+
+export const Head = () => <Seo pageTitle="Welcome" />
 
 export default IndexPage
 
