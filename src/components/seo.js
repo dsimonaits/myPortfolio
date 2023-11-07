@@ -3,6 +3,7 @@
 
 import * as React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata.jsx"
+import { Helmet } from "react-helmet"
 
 function Seo({ title: pageTitle, description }) {
   const {
@@ -20,9 +21,11 @@ function Seo({ title: pageTitle, description }) {
   }
 
   return (
-    <>
+    <Helmet>
       <title>{seo.title}</title>
-    </>
+      <meta name="description" content={seo.description} />
+      <meta name="author" content={seo.author} />
+    </Helmet>
   )
 }
 
