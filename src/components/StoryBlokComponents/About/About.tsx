@@ -61,7 +61,7 @@ const About = ({ blok }: AboutStoryblok) => {
             </Tag>
           </Box>
           <VStack flex="1">
-            <Tag size="lg" p="20px" mb="-20px">
+            <Tag size="lg" p="20px" mb="-20px" zIndex="99">
               About Me
             </Tag>
             <BlurContainer>
