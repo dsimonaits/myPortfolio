@@ -14,10 +14,12 @@ import {
   VStack,
 } from "@chakra-ui/react"
 import Section from "../../Section/Section"
+import Avatar from "../../../images/avatar.jpeg"
 import { AboutStoryblok } from "../../../../component-types-sb"
 import BlurContainer from "../../BlurContainer/BlurContainer"
 
 const About = ({ blok }: AboutStoryblok) => {
+  const avatarFallback = Avatar
   const aboutMe = blok.aboutMe
   const moreAbout = blok.moreAbout
   return (
@@ -50,7 +52,7 @@ const About = ({ blok }: AboutStoryblok) => {
               mx="auto"
               src={`${blok.myImage.filename}/m/filters:format(webp)
 `}
-              fallbackSrc="https://via.placeholder.com/150"
+              fallbackSrc={avatarFallback}
               alt="Deniss Simonaits"
               borderRadius="full"
               boxSize={["200px", "200px", "300px"]}
