@@ -4,7 +4,7 @@ import ArticleTeaser from "../ArticleTeaser/ArticleTeaser"
 import { storyblokEditable } from "gatsby-source-storyblok"
 import { useStaticQuery, graphql } from "gatsby"
 import { useState, useEffect } from "react"
-import { Tag, VStack } from "@chakra-ui/react"
+import { VStack } from "@chakra-ui/react"
 import Section from "../../Section/Section"
 import MainContainer from "../../Container/Container"
 import { AllArticlesStoryblok } from "../../../../component-types-sb"
@@ -61,9 +61,6 @@ const AllArticles = ({ blok }: AllArticlesStoryblok) => {
     <Section>
       <MainContainer style={{ zIndex: "99" }}>
         <VStack>
-          <Tag size="lg" p="20px" mb="-20px" mr="50%">
-            {blok.title}
-          </Tag>
           <div {...storyblokEditable(blok)}>
             <VStack spacing="40px">
               {articles[0] &&
