@@ -37,7 +37,7 @@ const ArticleTeaser = ({ article, slug, index }: ArticleStoryblok) => {
         display="flex"
         justify={articlePositionEven && !isMobile ? "left" : "right"}
       >
-        <Tag size={["sm", "md", "lg"]} p="20px" mx={tagPosition} mb="-10px">
+        <Tag size={["md", "md", "lg"]} p="20px" mx={tagPosition} mb="-10px">
           Featured project - {article.title}
         </Tag>
       </HStack>
@@ -149,16 +149,6 @@ const mobileMarkup = ({ article, slug }: IDesktopMarkup) => {
       >
         {" "}
         <VStack align="left" height="auto">
-          {" "}
-          <Heading
-            as="h2"
-            size="md"
-            mb="20px"
-            textAlign="left"
-            color="secondary.600"
-          >
-            {article.title}
-          </Heading>
           <Heading as="h3" size="sm" mt="10px" textAlign="left">
             {article.subtitle}
           </Heading>
