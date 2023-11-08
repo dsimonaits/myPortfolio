@@ -24,6 +24,7 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.11.0",
+    "react-responsive": "^9.0.2",
     "react-scroll": "^1.9.0",
     "storyblok-rich-text-react-renderer": "^2.9.0"
   },
