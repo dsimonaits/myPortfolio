@@ -5,9 +5,13 @@ import MainContainer from "../../Container/Container"
 import { FooterStoryblok } from "../../../../component-types-sb"
 import BlurContainer from "../../BlurContainer/BlurContainer"
 import { Tag } from "@chakra-ui/tag"
-import { Box } from "@chakra-ui/react"
+import { Box, Link, Text, VStack } from "@chakra-ui/react"
+import getCurrentDateInfo from "../../CurrentDateInfo/CurrentDateInfo"
+import { AiFillGithub } from "react-icons/ai"
 
 const Footer = ({ blok }: FooterStoryblok) => {
+  const currentYear = getCurrentDateInfo("year")
+  const createdDate = currentYear === 2022 ? null : 2022 + " - "
   return (
     <>
       <Section style={{ p: ["0px", "0px", "0px"] }}>
@@ -33,6 +37,19 @@ const Footer = ({ blok }: FooterStoryblok) => {
               <StoryblokComponent key={blok._uid} blok={blok} />
             ))}
           </BlurContainer>
+          <VStack justify="center">
+            {" "}
+            <Text mt="10px">
+              D.S. - portfolio | {createdDate}
+              {currentYear}
+            </Text>
+            <Link
+              href="https://github.com/dsimonaits/myPortfolio"
+              target="_blank"
+            >
+              Github <AiFillGithub />
+            </Link>
+          </VStack>
         </MainContainer>
       </Section>
     </>
