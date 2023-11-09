@@ -11,6 +11,9 @@ export const MainTheme = extendTheme({
       p: {
         mb: "10px",
       },
+      svg: {
+        display: "inline-block",
+      },
     },
   },
   colors: {
@@ -32,5 +35,4 @@ export const MainTheme = extendTheme({
     heading: "Poppins, sans-serif",
     body: "Roboto, sans-serif;",
   },
-  components: {},
 })
