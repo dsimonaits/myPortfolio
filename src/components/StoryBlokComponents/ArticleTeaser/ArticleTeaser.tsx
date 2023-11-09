@@ -1,5 +1,5 @@
 "use client"
-import { ExternalLinkIcon } from "@chakra-ui/icons"
+import { ArrowRightIcon, ExternalLinkIcon } from "@chakra-ui/icons"
 import {
   Box,
   Heading,
@@ -30,6 +30,8 @@ const ArticleTeaser = ({ article, slug, index }: ArticleStoryblok) => {
   const mobile = mobileMarkup({ article, slug })
 
   const tagPosition = isMobile ? "auto" : "0"
+
+  console.log(article)
 
   return (
     <Box>
@@ -81,7 +83,18 @@ const desktopMarkup = ({ article, slug, even }: IDesktopMarkup) => {
                   display="block"
                   color="secondary.400"
                 >
-                  Read More over {article.title} <ExternalLinkIcon mx="2px" />
+                  Read More over {article.title}{" "}
+                  <ArrowRightIcon mx="2px" boxSize={3} />
+                </Link>
+                <Link
+                  href={`${article?.link?.url}`}
+                  mb="10px"
+                  display="block"
+                  color="secondary.400"
+                  isExternal
+                >
+                  Open Demo page - {article?.title}{" "}
+                  <ExternalLinkIcon mx="2px" />
                 </Link>
               </Box>
             </VStack>
@@ -126,7 +139,18 @@ const desktopMarkup = ({ article, slug, even }: IDesktopMarkup) => {
                   display="block"
                   color="secondary.400"
                 >
-                  Read More over {article.title} <ExternalLinkIcon mx="2px" />
+                  Read More over {article.title}{" "}
+                  <ArrowRightIcon mx="2px" boxSize={3} />
+                </Link>
+                <Link
+                  href={`${article?.link?.url}`}
+                  mb="10px"
+                  display="block"
+                  color="secondary.400"
+                  isExternal
+                >
+                  Open Demo page - {article?.title}{" "}
+                  <ExternalLinkIcon mx="2px" />
                 </Link>
               </Box>
             </VStack>
@@ -159,7 +183,17 @@ const mobileMarkup = ({ article, slug }: IDesktopMarkup) => {
               display="block"
               color="secondary.400"
             >
-              Read More over {article.title} <ExternalLinkIcon mx="2px" />
+              Read More over {article.title}{" "}
+              <ArrowRightIcon boxSize={3} mx="2px" />
+            </Link>
+            <Link
+              href={`${article?.link?.url}`}
+              mb="10px"
+              display="block"
+              color="secondary.400"
+              isExternal
+            >
+              Open Demo page - {article?.title} <ExternalLinkIcon mx="2px" />
             </Link>
           </Box>
         </VStack>
