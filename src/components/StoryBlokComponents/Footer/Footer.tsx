@@ -5,6 +5,7 @@ import {
   ContactStoryblok,
   SocialLinkListStoryblok,
 } from "../../../../component-types-sb"
+import { INode } from "../../../types/types"
 import Section from "../../Section/Section"
 import MainContainer from "../../Container/Container"
 import BlurContainer from "../../BlurContainer/BlurContainer"
@@ -15,16 +16,6 @@ import getCurrentDateInfo from "../../CurrentDateInfo/CurrentDateInfo"
 import { AiFillGithub } from "react-icons/ai"
 import Contact from "../Contact/Contact"
 import SocialLinkList from "../SocialLinkList/SocialLinkList"
-
-interface nodeContent {
-  name: string
-  uuid: string
-  content: string
-}
-
-interface INode {
-  node: nodeContent
-}
 
 const Footer = () => {
   const { footer } = useStaticQuery(graphql`
@@ -46,8 +37,6 @@ const Footer = () => {
     ? JSON.parse(thisFooter[0].node.content)
     : {}
 
-  console.log(footerContent.components[1])
-
   const contactMe: ContactStoryblok = footerContent.components[0]
   const socialLinks: SocialLinkListStoryblok = footerContent.components[1]
 
@@ -55,7 +44,7 @@ const Footer = () => {
   const createdDate = currentYear === 2022 ? null : 2022 + " - "
   return (
     <>
-      <Section style={{ py: ["40px", "40px", "40px"] }}>
+      <Section id="contact" style={{ py: ["40px", "40px", "40px"] }}>
         <MainContainer
           style={{ display: "flex", flexDirection: "column", gap: "10px" }}
         >
