@@ -7,11 +7,15 @@ import {
   AccordionPanel,
 } from "@chakra-ui/accordion"
 import { Box, Stack } from "@chakra-ui/layout"
-
 import { render } from "storyblok-rich-text-react-renderer"
 import { ContactStoryblok } from "../../../../component-types-sb"
 
-const Contact = ({ blok }: ContactStoryblok) => {
+interface ContactProps {
+  blok: ContactStoryblok
+}
+
+const Contact: React.FC<ContactProps> = ({ blok }) => {
+  console.log(blok)
   const contactMe = blok.contactMe
   const contactMoreInfo = blok.contactMore
 
