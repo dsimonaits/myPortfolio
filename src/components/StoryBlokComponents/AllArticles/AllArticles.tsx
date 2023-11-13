@@ -58,7 +58,7 @@ const AllArticles = ({ blok }: AllArticlesStoryblok) => {
   }, [])
 
   return (
-    <Section>
+    <Section id="featured">
       <MainContainer style={{ zIndex: "99" }}>
         <VStack>
           <div {...storyblokEditable(blok)}>
