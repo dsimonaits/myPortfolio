@@ -14,6 +14,7 @@ const MainContainer: FC<ICon> = ({ children, style, as }) => {
       position="relative"
       mx="auto"
       px={["10px", "40px", "40px"]}
+      width="100%"
       maxWidth="1400px"
       {...style}
     >
