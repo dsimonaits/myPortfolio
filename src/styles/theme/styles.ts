@@ -6,12 +6,16 @@ export const MainTheme = extendTheme({
       "html, body": {
         color: "white",
         backgroundColor: "black",
+        scrollBehavior: "smooth",
       },
       p: {
         mb: "10px",
       },
       svg: {
         display: "inline-block",
+      },
+      "ul, ol, li": {
+        listStyle: "none",
       },
     },
   },
