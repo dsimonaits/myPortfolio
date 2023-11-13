@@ -6,7 +6,6 @@ export const MainTheme = extendTheme({
       "html, body": {
         color: "white",
         backgroundColor: "black",
-        py: ["20px", "30px", "30px"],
       },
       p: {
         mb: "10px",
