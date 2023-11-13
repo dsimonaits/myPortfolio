@@ -62,7 +62,7 @@ const AllArticles = ({ blok }: AllArticlesStoryblok) => {
       <MainContainer style={{ zIndex: "99" }}>
         <VStack>
           <div {...storyblokEditable(blok)}>
-            <VStack spacing="40px">
+            <VStack spacing="60px">
               {articles[0] &&
                 articles.map((article, index) => {
                   return (

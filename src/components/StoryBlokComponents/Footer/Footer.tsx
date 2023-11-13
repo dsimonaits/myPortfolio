@@ -55,7 +55,7 @@ const Footer = () => {
   const createdDate = currentYear === 2022 ? null : 2022 + " - "
   return (
     <>
-      <Section style={{ p: ["0px", "0px", "0px"] }}>
+      <Section style={{ py: ["40px", "40px", "40px"] }}>
         <MainContainer
           style={{ display: "flex", flexDirection: "column", gap: "10px" }}
         >
