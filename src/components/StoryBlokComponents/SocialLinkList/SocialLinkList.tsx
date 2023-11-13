@@ -6,7 +6,11 @@ import {
   SocialLinkStoryblok,
 } from "../../../../component-types-sb"
 
-const SocialLinkList = ({ blok }: SocialLinkListStoryblok) => {
+interface SocialLinkListProps {
+  blok: SocialLinkListStoryblok
+}
+
+const SocialLinkList: React.FC<SocialLinkListProps> = ({ blok }) => {
   return (
     <List display="flex" flexDir="row" gap="10px" justifyContent="center">
       {blok.socialLinks.map((blok: SocialLinkStoryblok) => (
