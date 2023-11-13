@@ -11,7 +11,7 @@ import BlurContainer from "../../BlurContainer/BlurContainer"
 
 const SkillsList = ({ blok }: SkillsListStoryblok) => {
   return (
-    <Section>
+    <Section id="skills">
       <MainContainer style={{ justifyContent: "center" }}>
         <Box
           position="absolute"
