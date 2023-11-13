@@ -31,8 +31,6 @@ const ArticleTeaser = ({ article, slug, index }: ArticleStoryblok) => {
 
   const tagPosition = isMobile ? "auto" : "0"
 
-  console.log(article)
-
   return (
     <Box>
       <HStack
