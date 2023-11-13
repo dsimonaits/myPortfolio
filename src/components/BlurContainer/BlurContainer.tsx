@@ -9,6 +9,7 @@ interface IBlurContainer {
 const BlurContainer: FC<IBlurContainer> = ({ children, style }) => {
   return (
     <Box
+      width="100%"
       flex="1"
       display="flex"
       flexDir="column"
