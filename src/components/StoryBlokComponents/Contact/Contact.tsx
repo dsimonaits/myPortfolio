@@ -15,7 +15,6 @@ interface ContactProps {
 }
 
 const Contact: React.FC<ContactProps> = ({ blok }) => {
-  console.log(blok)
   const contactMe = blok.contactMe
   const contactMoreInfo = blok.contactMore
 
