@@ -1,15 +1,56 @@
+/* eslint-disable prefer-const */
 import * as React from "react"
-import { StoryblokComponent } from "gatsby-source-storyblok"
+import { useStaticQuery, graphql } from "gatsby"
+import {
+  ContactStoryblok,
+  SocialLinkListStoryblok,
+} from "../../../../component-types-sb"
 import Section from "../../Section/Section"
 import MainContainer from "../../Container/Container"
-import { FooterStoryblok } from "../../../../component-types-sb"
 import BlurContainer from "../../BlurContainer/BlurContainer"
 import { Tag } from "@chakra-ui/tag"
 import { Box, Link, Text, VStack } from "@chakra-ui/react"
 import getCurrentDateInfo from "../../CurrentDateInfo/CurrentDateInfo"
-import { AiFillGithub } from "react-icons/ai"
 
-const Footer = ({ blok }: FooterStoryblok) => {
+import { AiFillGithub } from "react-icons/ai"
+import Contact from "../Contact/Contact"
+import SocialLinkList from "../SocialLinkList/SocialLinkList"
+
+interface nodeContent {
+  name: string
+  uuid: string
+  content: string
+}
+
+interface INode {
+  node: nodeContent
+}
+
+const Footer = () => {
+  const { footer } = useStaticQuery(graphql`
+    {
+      footer: allStoryblokEntry(filter: { field_component: { eq: "footer" } }) {
+        edges {
+          node {
+            name
+            uuid
+            content
+          }
+        }
+      }
+    }
+  `)
+
+  let thisFooter = footer.edges.filter(({ node }: INode) => node.uuid)
+  let footerContent = thisFooter.length
+    ? JSON.parse(thisFooter[0].node.content)
+    : {}
+
+  console.log(footerContent.components[1])
+
+  const contactMe: ContactStoryblok = footerContent.components[0]
+  const socialLinks: SocialLinkListStoryblok = footerContent.components[1]
+
   const currentYear = getCurrentDateInfo("year")
   const createdDate = currentYear === 2022 ? null : 2022 + " - "
   return (
@@ -33,9 +74,8 @@ const Footer = ({ blok }: FooterStoryblok) => {
             Contact Me
           </Tag>
           <BlurContainer>
-            {blok.children.map((blok: FooterStoryblok) => (
-              <StoryblokComponent key={blok._uid} blok={blok} />
-            ))}
+            <Contact blok={contactMe} />
+            <SocialLinkList blok={socialLinks} />
           </BlurContainer>
           <VStack justify="center">
             {" "}
