@@ -33,7 +33,9 @@ storyblokInit({
 const Layout = ({ children }) => {
   return (
     <>
-      <MainContainer as={{ as: "main" }}>{children}</MainContainer>
+      <MainContainer as={{ as: "main" }} style={{ px: 0 }}>
+        {children}
+      </MainContainer>
       <Footer />
     </>
   )
