@@ -37,9 +37,10 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "about",
-      "component_group_uuid": null,
+      "component_group_uuid": "55a777ae-89e9-425e-af27-fa7602893eb3",
       "color": null,
-      "icon": null
+      "icon": null,
+      "component_group_name": "main"
     },
     {
       "name": "all-articles",
@@ -60,9 +61,10 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "all-articles",
-      "component_group_uuid": null,
+      "component_group_uuid": "55a777ae-89e9-425e-af27-fa7602893eb3",
       "color": null,
-      "icon": null
+      "icon": null,
+      "component_group_name": "main"
     },
     {
       "name": "article",
@@ -104,9 +106,10 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "Article",
-      "component_group_uuid": null,
+      "component_group_uuid": "55a777ae-89e9-425e-af27-fa7602893eb3",
       "color": null,
-      "icon": null
+      "icon": null,
+      "component_group_name": "main"
     },
     {
       "name": "contact",
@@ -149,11 +152,44 @@
       "name": "footer",
       "display_name": null,
       "created_at": "2023-11-11T19:36:30.158Z",
-      "updated_at": "2023-11-11T19:37:04.977Z",
+      "updated_at": "2023-11-13T17:07:09.459Z",
       "id": 4868865,
       "schema": {
-        "components": {
+        "contactMe": {
+          "type": "bloks",
+          "display_name": "Contacts"
+        },
+        "socialLinks": {
           "type": "bloks"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "footer",
+      "component_group_uuid": "6eb0c820-c0d9-4e30-9e39-5eb8d439c9c7",
+      "color": null,
+      "icon": null,
+      "component_group_name": "footer"
+    },
+    {
+      "name": "header",
+      "display_name": null,
+      "created_at": "2023-11-13T16:20:46.307Z",
+      "updated_at": "2023-11-13T16:26:08.741Z",
+      "id": 4875985,
+      "schema": {
+        "Logo": {
+          "type": "bloks",
+          "pos": 0
+        },
+        "HeaderMenu": {
+          "type": "bloks",
+          "pos": 1
         }
       },
       "image": null,
@@ -163,10 +199,65 @@
       "is_nestable": false,
       "all_presets": [],
       "preset_id": null,
-      "real_name": "footer",
-      "component_group_uuid": null,
+      "real_name": "header",
+      "component_group_uuid": "64dad25b-e85a-4a29-b18d-10d4a6cc9a1f",
       "color": null,
-      "icon": null
+      "icon": null,
+      "component_group_name": "header"
+    },
+    {
+      "name": "logo",
+      "display_name": null,
+      "created_at": "2023-11-13T16:23:02.552Z",
+      "updated_at": "2023-11-13T16:23:51.189Z",
+      "id": 4875989,
+      "schema": {
+        "logoImg": {
+          "type": "asset"
+        },
+        "logoName": {
+          "type": "text"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "logo",
+      "component_group_uuid": "64dad25b-e85a-4a29-b18d-10d4a6cc9a1f",
+      "color": null,
+      "icon": null,
+      "component_group_name": "header"
+    },
+    {
+      "name": "menuLink",
+      "display_name": null,
+      "created_at": "2023-11-13T16:24:45.656Z",
+      "updated_at": "2023-11-13T16:25:02.582Z",
+      "id": 4876013,
+      "schema": {
+        "link": {
+          "type": "multilink"
+        },
+        "name": {
+          "type": "text"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "menuLink",
+      "component_group_uuid": "64dad25b-e85a-4a29-b18d-10d4a6cc9a1f",
+      "color": null,
+      "icon": null,
+      "component_group_name": "header"
     },
     {
       "name": "page",
@@ -187,9 +278,10 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "page",
-      "component_group_uuid": null,
+      "component_group_uuid": "55a777ae-89e9-425e-af27-fa7602893eb3",
       "color": null,
-      "icon": null
+      "icon": null,
+      "component_group_name": "main"
     },
     {
       "name": "skill",
@@ -214,9 +306,10 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "skill",
-      "component_group_uuid": null,
+      "component_group_uuid": "55a777ae-89e9-425e-af27-fa7602893eb3",
       "color": null,
-      "icon": null
+      "icon": null,
+      "component_group_name": "main"
     },
     {
       "name": "skills-list",
@@ -237,9 +330,10 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "skills-list",
-      "component_group_uuid": null,
+      "component_group_uuid": "55a777ae-89e9-425e-af27-fa7602893eb3",
       "color": null,
-      "icon": null
+      "icon": null,
+      "component_group_name": "main"
     },
     {
       "name": "socialLink",
@@ -273,9 +367,10 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "socialLink",
-      "component_group_uuid": null,
+      "component_group_uuid": "55a777ae-89e9-425e-af27-fa7602893eb3",
       "color": null,
-      "icon": null
+      "icon": null,
+      "component_group_name": "main"
     },
     {
       "name": "socialLinkList",
@@ -296,9 +391,10 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "socialLinkList",
-      "component_group_uuid": null,
+      "component_group_uuid": "55a777ae-89e9-425e-af27-fa7602893eb3",
       "color": null,
-      "icon": null
+      "icon": null,
+      "component_group_name": "main"
     }
   ]
 }

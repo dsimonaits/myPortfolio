@@ -74,7 +74,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 8000 --cert localhost.pem --key localhost-key.pem",
     "storyblok-pull": "storyblok pull-components --space 259099",
-    "generate-sb-types": "storyblok-generate-ts source=./components.259099.json target=./component-types-sb"
+    "g-sb-t": "storyblok-generate-ts source=./components.259099.json target=./component-types-sb"
   },
   "repository": {
     "type": "git",
