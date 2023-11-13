@@ -112,17 +112,24 @@
       "name": "contact",
       "display_name": null,
       "created_at": "2023-11-07T12:40:18.887Z",
-      "updated_at": "2023-11-07T12:41:10.033Z",
+      "updated_at": "2023-11-11T19:38:58.821Z",
       "id": 4848138,
       "schema": {
         "heading": {
-          "type": "text"
+          "type": "text",
+          "pos": 0
+        },
+        "readMore": {
+          "type": "text",
+          "pos": 1
         },
         "contactMe": {
-          "type": "richtext"
+          "type": "richtext",
+          "pos": 2
         },
         "contactMore": {
-          "type": "richtext"
+          "type": "richtext",
+          "pos": 3
         }
       },
       "image": null,
@@ -133,26 +140,27 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "contact",
-      "component_group_uuid": null,
+      "component_group_uuid": "6eb0c820-c0d9-4e30-9e39-5eb8d439c9c7",
       "color": null,
-      "icon": null
+      "icon": null,
+      "component_group_name": "footer"
     },
     {
       "name": "footer",
       "display_name": null,
-      "created_at": "2023-11-07T12:44:55.332Z",
-      "updated_at": "2023-11-07T12:45:28.328Z",
-      "id": 4848184,
+      "created_at": "2023-11-11T19:36:30.158Z",
+      "updated_at": "2023-11-11T19:37:04.977Z",
+      "id": 4868865,
       "schema": {
-        "children": {
+        "components": {
           "type": "bloks"
         }
       },
       "image": null,
       "preview_field": null,
-      "is_root": false,
+      "is_root": true,
       "preview_tmpl": null,
-      "is_nestable": true,
+      "is_nestable": false,
       "all_presets": [],
       "preset_id": null,
       "real_name": "footer",

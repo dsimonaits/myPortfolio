@@ -19,6 +19,7 @@ export interface RichtextStoryblok {
   marks?: RichtextStoryblok[]
   attrs?: any
   text?: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [k: string]: any
 }
 
@@ -106,6 +107,7 @@ export interface ArticleStoryblok {
 
 export interface ContactStoryblok {
   heading?: string
+  readMore?: string
   contactMe?: RichtextStoryblok
   contactMore?: RichtextStoryblok
   _uid: string
@@ -114,7 +116,7 @@ export interface ContactStoryblok {
 }
 
 export interface FooterStoryblok {
-  children?: (
+  components?: (
     | AboutStoryblok
     | AllArticlesStoryblok
     | ArticleStoryblok
