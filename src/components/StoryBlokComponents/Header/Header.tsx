@@ -65,7 +65,7 @@ const Header = () => {
           px="40px"
         >
           {/* <Box>{Logo.logoName}</Box> */}
-          <HStack as="ul" gap="30px">
+          <HStack as="ul" gap="30px" justifyContent="center">
             <Nav />
           </HStack>
         </HStack>
