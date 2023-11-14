@@ -1,6 +1,6 @@
 import React from "react"
 // import { useState } from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { INode } from "../../../types/types"
 import { MenuLinkStoryblok } from "../../../../component-types-sb"
 import { Box, HStack } from "@chakra-ui/layout"
@@ -24,7 +24,7 @@ const Header = () => {
 
   // const [openMenu, setOpenMenu] = useState(false)
 
-  const thisHeader = header.edges.filter(({ node }: INode) => node.uuid)
+  const thisHeader = header?.edges?.filter(({ node }: INode) => node.uuid)
   const headerContent = thisHeader.length
     ? JSON.parse(thisHeader[0].node.content)
     : {}
@@ -33,14 +33,14 @@ const Header = () => {
 
   const Logo = headerContent.Logo[0]
 
-  console.log(Logo)
-
   const Nav = () =>
-    menu.map((item: MenuLinkStoryblok) => (
-      <Box as="li" key={item._uid}>
-        <Link to={`${item?.link?.url}`}>{item.name}</Link>
-      </Box>
-    ))
+    menu.map((item: MenuLinkStoryblok) =>
+      item ? (
+        <Box as="li" key={item._uid}>
+          <a href={`${item?.link?.cached_url}`}>{item.name}</a>
+        </Box>
+      ) : null
+    )
 
   return (
     <Box
@@ -66,7 +66,7 @@ const Header = () => {
           zIndex="100"
           px="40px"
         >
-          <Box>{Logo.logoName}</Box>
+          {/* <Box>{Logo.logoName}</Box> */}
           <HStack as="ul" gap="30px">
             <Nav />
           </HStack>
