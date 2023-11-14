@@ -51,7 +51,10 @@ const desktopMarkup = ({ article, slug, even }: IDesktopMarkup) => {
             }}
           >
             {" "}
-            <VStack align="left" height="auto">
+            <VStack align="left" height="auto" pl="20px">
+              <Heading as="h2" size="lg" mt="10px" textAlign="left">
+                {article.title}
+              </Heading>
               <Heading as="h3" size="sm" mt="10px" textAlign="left">
                 {article.subtitle}
               </Heading>
@@ -107,7 +110,10 @@ const desktopMarkup = ({ article, slug, even }: IDesktopMarkup) => {
             }}
           >
             {" "}
-            <VStack align="left" height="auto">
+            <VStack align="left" height="auto" pl="20px">
+              <Heading as="h2" size="lg" mt="10px" textAlign="left">
+                {article.title}
+              </Heading>
               <Heading as="h3" size="sm" mt="10px" textAlign="left">
                 {article.subtitle}
               </Heading>
