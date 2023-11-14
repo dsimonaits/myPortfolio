@@ -151,23 +151,19 @@
     {
       "name": "footer",
       "display_name": null,
-      "created_at": "2023-11-11T19:36:30.158Z",
-      "updated_at": "2023-11-13T17:07:09.459Z",
-      "id": 4868865,
+      "created_at": "2023-11-14T11:23:08.069Z",
+      "updated_at": "2023-11-14T11:25:42.329Z",
+      "id": 4880073,
       "schema": {
-        "contactMe": {
-          "type": "bloks",
-          "display_name": "Contacts"
-        },
-        "socialLinks": {
+        "footer": {
           "type": "bloks"
         }
       },
       "image": null,
       "preview_field": null,
-      "is_root": false,
+      "is_root": true,
       "preview_tmpl": null,
-      "is_nestable": true,
+      "is_nestable": false,
       "all_presets": [],
       "preset_id": null,
       "real_name": "footer",

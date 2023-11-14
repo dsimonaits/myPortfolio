@@ -25,6 +25,7 @@ module.exports = {
     siteUrl: `https://github.com/dsimonaits/myPortfolio`,
   },
   graphqlTypegen: true,
+  pathPrefix: "/blog",
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
