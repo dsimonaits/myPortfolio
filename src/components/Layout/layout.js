@@ -15,6 +15,7 @@ import MainContainer from "../Container/Container"
 import SkillsList from "../StoryBlokComponents/SkillsList/SkillsList"
 import Skill from "../StoryBlokComponents/Skill/Skill"
 import SocialLink from "../StoryBlokComponents/SocialLink/SocialLink.tsx"
+import PopularArticles from "../StoryBlokComponents/PopularArticles/PopularArticles.tsx"
 
 storyblokInit({
   accessToken: process.env.GATSBY_PREVIEW_STORYBLOK,
@@ -30,6 +31,7 @@ storyblokInit({
     "skills-list": SkillsList,
     skill: Skill,
     socialLink: SocialLink,
+    "popular-articles": PopularArticles,
   },
 })
 
