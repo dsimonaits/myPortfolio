@@ -4,7 +4,7 @@ import React from "react"
 import { storyblokInit, apiPlugin } from "gatsby-source-storyblok"
 import Page from "../StoryBlokComponents/Page/page"
 import "./layout.module.css"
-import Header from "../StoryBlokComponents/Header/Header"
+// import Header from "../StoryBlokComponents/Header/Header"
 import About from "../StoryBlokComponents/About/About"
 import Article from "../StoryBlokComponents/Article/Article"
 import AllArticles from "../StoryBlokComponents/AllArticles/AllArticles"
@@ -34,7 +34,7 @@ storyblokInit({
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <MainContainer as={{ as: "main" }} style={{ pt: "60px" }}>
         {children}
       </MainContainer>
