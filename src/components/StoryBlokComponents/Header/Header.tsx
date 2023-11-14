@@ -31,8 +31,6 @@ const Header = () => {
 
   const menu = headerContent.HeaderMenu.map((menu: MenuLinkStoryblok[]) => menu)
 
-  const Logo = headerContent.Logo[0]
-
   const Nav = () =>
     menu.map((item: MenuLinkStoryblok) =>
       item ? (
