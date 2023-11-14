@@ -4,8 +4,6 @@ import * as React from "react"
 import { graphql } from "gatsby"
 import { StoryblokStory } from "gatsby-source-storyblok"
 import Layout from "../components/Layout/layout"
-import { ChakraProvider } from "@chakra-ui/react"
-import { MainTheme } from "../styles/theme/styles"
 import Seo from "../components/seo"
 
 const IndexPage = ({ data }) => {
@@ -13,11 +11,9 @@ const IndexPage = ({ data }) => {
     data.storyblokEntry.content = JSON.parse(data.storyblokEntry.content)
 
   return (
-    <ChakraProvider theme={MainTheme}>
-      <Layout>
-        <StoryblokStory story={data.storyblokEntry} />
-      </Layout>
-    </ChakraProvider>
+    <Layout>
+      <StoryblokStory story={data.storyblokEntry} />
+    </Layout>
   )
 }
 
