@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { StoryblokStory } from "storyblok-generate-ts"
 
 export interface AssetStoryblok {
@@ -125,6 +124,7 @@ export interface FooterStoryblok {
     | LogoStoryblok
     | MenuLinkStoryblok
     | PageStoryblok
+    | PopularArticlesStoryblok
     | SkillStoryblok
     | SkillsListStoryblok
     | SocialLinkStoryblok
@@ -146,6 +146,7 @@ export interface HeaderStoryblok {
     | LogoStoryblok
     | MenuLinkStoryblok
     | PageStoryblok
+    | PopularArticlesStoryblok
     | SkillStoryblok
     | SkillsListStoryblok
     | SocialLinkStoryblok
@@ -161,6 +162,7 @@ export interface HeaderStoryblok {
     | LogoStoryblok
     | MenuLinkStoryblok
     | PageStoryblok
+    | PopularArticlesStoryblok
     | SkillStoryblok
     | SkillsListStoryblok
     | SocialLinkStoryblok
@@ -201,6 +203,7 @@ export interface PageStoryblok {
     | LogoStoryblok
     | MenuLinkStoryblok
     | PageStoryblok
+    | PopularArticlesStoryblok
     | SkillStoryblok
     | SkillsListStoryblok
     | SocialLinkStoryblok
@@ -209,6 +212,13 @@ export interface PageStoryblok {
   _uid: string
   component: "page"
   uuid?: string
+  [k: string]: any
+}
+
+export interface PopularArticlesStoryblok {
+  articles?: (StoryblokStory<ArticleStoryblok> | string)[]
+  _uid: string
+  component: "popular-articles"
   [k: string]: any
 }
 
@@ -231,6 +241,7 @@ export interface SkillsListStoryblok {
     | LogoStoryblok
     | MenuLinkStoryblok
     | PageStoryblok
+    | PopularArticlesStoryblok
     | SkillStoryblok
     | SkillsListStoryblok
     | SocialLinkStoryblok
@@ -265,6 +276,7 @@ export interface SocialLinkListStoryblok {
     | LogoStoryblok
     | MenuLinkStoryblok
     | PageStoryblok
+    | PopularArticlesStoryblok
     | SkillStoryblok
     | SkillsListStoryblok
     | SocialLinkStoryblok

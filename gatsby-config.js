@@ -81,6 +81,7 @@ module.exports = {
         accessToken: process.env.GATSBY_PREVIEW_STORYBLOK,
         version: "draft",
         localAssets: true,
+        resolveRelations: ["popular-articles.articles"],
       },
     },
   ],
