@@ -1,15 +1,6 @@
 "use client"
 import { ArrowRightIcon, ExternalLinkIcon } from "@chakra-ui/icons"
-import {
-  Box,
-  Heading,
-  Image,
-  Link,
-  VStack,
-  Stack,
-  Tag,
-  HStack,
-} from "@chakra-ui/react"
+import { Box, Heading, Image, Link, VStack, Stack } from "@chakra-ui/react"
 import React from "react"
 import { ArticleStoryblok } from "../../../../component-types-sb"
 import BlurContainer from "../../BlurContainer/BlurContainer"
@@ -29,18 +20,8 @@ const ArticleTeaser = ({ article, slug, index }: ArticleStoryblok) => {
   const desktop = desktopMarkup({ article, slug, even: articlePositionEven })
   const mobile = mobileMarkup({ article, slug })
 
-  const tagPosition = isMobile ? "auto" : "0"
-
   return (
     <Box>
-      <HStack
-        display="flex"
-        justify={articlePositionEven && !isMobile ? "left" : "right"}
-      >
-        <Tag size={["md", "md", "lg"]} p="20px" mx={tagPosition} mb="-10px">
-          Featured project - {article.title}
-        </Tag>
-      </HStack>
       <Stack
         direction={["column", "row", "row"]}
         display={["block", "flex", "flex"]}
