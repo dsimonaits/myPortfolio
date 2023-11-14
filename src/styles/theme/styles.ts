@@ -9,7 +9,7 @@ export const MainTheme = extendTheme({
         scrollBehavior: "smooth",
       },
       p: {
-        mb: "10px",
+        lineHeight: 1.8,
       },
       svg: {
         display: "inline-block",
