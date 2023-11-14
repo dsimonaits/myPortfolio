@@ -54,7 +54,7 @@ const Header = () => {
       transitionProperty="transform"
       transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
-      fontSize="xl"
+      fontSize="md"
     >
       <MainContainer>
         <HStack
