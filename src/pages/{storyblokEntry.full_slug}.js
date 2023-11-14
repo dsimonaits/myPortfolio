@@ -7,9 +7,7 @@ import {
   storyblokEditable,
   useStoryblokState,
 } from "gatsby-source-storyblok"
-import { ChakraProvider } from "@chakra-ui/react"
 import Layout from "../components/Layout/layout"
-import { MainTheme } from "../styles/theme/styles"
 
 export default function Page({ data }) {
   let story = data.storyblokEntry
@@ -31,13 +29,11 @@ export default function Page({ data }) {
   }
 
   return (
-    <ChakraProvider theme={MainTheme}>
-      <Layout>
-        <div {...storyblokEditable(story.content)}>
-          <Templates blok={story.content} key={story.content._uid} />
-        </div>
-      </Layout>
-    </ChakraProvider>
+    <Layout>
+      <div {...storyblokEditable(story.content)}>
+        <Templates blok={story.content} key={story.content._uid} />
+      </div>
+    </Layout>
   )
 }
 
