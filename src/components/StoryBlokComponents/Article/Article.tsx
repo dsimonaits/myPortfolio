@@ -1,5 +1,6 @@
 import React from "react"
 import { render } from "storyblok-rich-text-react-renderer"
+import { navigate } from "gatsby"
 import Section from "../../Section/Section"
 import MainContainer from "../../Container/Container"
 import { Box, Heading, Image, Link, Tag } from "@chakra-ui/react"
@@ -18,7 +19,7 @@ const Article = ({ blok }: ArticleStoryblok) => {
           _hover={{ bg: "secondary.600", color: "main.100" }}
           transition="all 250ms cubic-bezier(0.4, 0, 0.2, 1)"
         >
-          <Link href="/">Go back</Link>
+          <Link onClick={() => navigate(-1)}>Go back</Link>
         </Tag>
         <BlurContainer style={{ justify: "center" }}>
           <Heading as="h1" mb="10px" color="secondary.600">
