@@ -1615,6 +1615,7 @@ type Query_storyblokSpaceArgs = {
   id: InputMaybe<StringQueryOperatorInput>;
   internal: InputMaybe<InternalFilterInput>;
   internalId: InputMaybe<IntQueryOperatorInput>;
+  language_codes: InputMaybe<StringQueryOperatorInput>;
   name: InputMaybe<StringQueryOperatorInput>;
   parent: InputMaybe<NodeFilterInput>;
   version: InputMaybe<IntQueryOperatorInput>;
@@ -2623,6 +2624,7 @@ type StoryblokSpace = Node & {
   readonly id: Scalars['ID'];
   readonly internal: Internal;
   readonly internalId: Maybe<Scalars['Int']>;
+  readonly language_codes: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly name: Maybe<Scalars['String']>;
   readonly parent: Maybe<Node>;
   readonly version: Maybe<Scalars['Int']>;
@@ -2679,6 +2681,7 @@ type StoryblokSpaceFieldSelector = {
   readonly id: InputMaybe<FieldSelectorEnum>;
   readonly internal: InputMaybe<InternalFieldSelector>;
   readonly internalId: InputMaybe<FieldSelectorEnum>;
+  readonly language_codes: InputMaybe<FieldSelectorEnum>;
   readonly name: InputMaybe<FieldSelectorEnum>;
   readonly parent: InputMaybe<NodeFieldSelector>;
   readonly version: InputMaybe<FieldSelectorEnum>;
@@ -2690,6 +2693,7 @@ type StoryblokSpaceFilterInput = {
   readonly id: InputMaybe<StringQueryOperatorInput>;
   readonly internal: InputMaybe<InternalFilterInput>;
   readonly internalId: InputMaybe<IntQueryOperatorInput>;
+  readonly language_codes: InputMaybe<StringQueryOperatorInput>;
   readonly name: InputMaybe<StringQueryOperatorInput>;
   readonly parent: InputMaybe<NodeFilterInput>;
   readonly version: InputMaybe<IntQueryOperatorInput>;
@@ -2742,6 +2746,7 @@ type StoryblokSpaceSortInput = {
   readonly id: InputMaybe<SortOrderEnum>;
   readonly internal: InputMaybe<InternalSortInput>;
   readonly internalId: InputMaybe<SortOrderEnum>;
+  readonly language_codes: InputMaybe<SortOrderEnum>;
   readonly name: InputMaybe<SortOrderEnum>;
   readonly parent: InputMaybe<NodeSortInput>;
   readonly version: InputMaybe<SortOrderEnum>;
