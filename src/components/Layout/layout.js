@@ -4,14 +4,16 @@ import React from "react"
 import { storyblokInit, apiPlugin } from "gatsby-source-storyblok"
 import Page from "../StoryBlokComponents/Page/page"
 import "./layout.module.css"
-// import Header from "../StoryBlokComponents/Header/Header"
+import { ChakraProvider } from "@chakra-ui/react"
+import { MainTheme } from "../../styles/theme/styles.ts"
+import Header from "../StoryBlokComponents/Header/Header.tsx"
+import Footer from "../StoryBlokComponents/Footer/Footer.tsx"
 import About from "../StoryBlokComponents/About/About"
 import Article from "../StoryBlokComponents/Article/Article"
 import AllArticles from "../StoryBlokComponents/AllArticles/AllArticles"
 import MainContainer from "../Container/Container"
 import SkillsList from "../StoryBlokComponents/SkillsList/SkillsList"
 import Skill from "../StoryBlokComponents/Skill/Skill"
-import Footer from "../StoryBlokComponents/Footer/Footer.tsx"
 import SocialLink from "../StoryBlokComponents/SocialLink/SocialLink.tsx"
 
 storyblokInit({
@@ -33,13 +35,13 @@ storyblokInit({
 
 const Layout = ({ children }) => {
   return (
-    <>
-      {/* <Header /> */}
+    <ChakraProvider theme={MainTheme}>
+      <Header />
       <MainContainer as={{ as: "main" }} style={{ pt: "60px" }}>
         {children}
       </MainContainer>
       <Footer />
-    </>
+    </ChakraProvider>
   )
 }
 
