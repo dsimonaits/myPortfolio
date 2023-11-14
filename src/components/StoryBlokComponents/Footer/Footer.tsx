@@ -32,13 +32,13 @@ const Footer = () => {
     }
   `)
 
-  let thisFooter = footer.edges.filter(({ node }: INode) => node.uuid)
+  let thisFooter = footer?.edges?.filter(({ node }: INode) => node.uuid)
   let footerContent = thisFooter.length
     ? JSON.parse(thisFooter[0].node.content)
     : {}
 
-  const contactMe: ContactStoryblok = footerContent.components[0]
-  const socialLinks: SocialLinkListStoryblok = footerContent.components[1]
+  const contactMe: ContactStoryblok = footerContent.footer[0]
+  const socialLinks: SocialLinkListStoryblok = footerContent.footer[1]
 
   const currentYear = getCurrentDateInfo("year")
   const createdDate = currentYear === 2022 ? null : 2022 + " - "
