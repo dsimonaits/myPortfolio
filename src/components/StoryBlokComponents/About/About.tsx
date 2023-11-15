@@ -14,12 +14,12 @@ import {
   VStack,
 } from "@chakra-ui/react"
 import Section from "../../Section/Section"
-import Avatar from "../../../images/avatar.jpeg"
+import NoImage from "../../../images/no-image.png"
 import { AboutStoryblok } from "../../../../component-types-sb"
 import BlurContainer from "../../BlurContainer/BlurContainer"
 
 const About = ({ blok }: AboutStoryblok) => {
-  const avatarFallback = Avatar
+  const avatarFallback = NoImage
   const aboutMe = blok.aboutMe
   const moreAbout = blok.moreAbout
   return (
