@@ -39,7 +39,7 @@ const PopularArticles = ({ blok }: PopularArticlesStoryblok) => {
                         mx={tagPosition}
                         mb="-10px"
                       >
-                        Featured project - {article.title}
+                        Featured project
                       </Tag>
                     </HStack>
                     <ArticleTeaser
