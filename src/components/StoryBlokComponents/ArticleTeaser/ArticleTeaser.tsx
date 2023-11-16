@@ -55,7 +55,13 @@ const desktopMarkup = ({ article, slug, even }: IDesktopMarkup) => {
               <Heading as="h2" size="md" mt="10px" textAlign="left">
                 {article.title}
               </Heading>
-              <Heading as="h3" size="sm" mt="10px" textAlign="left">
+              <Heading
+                as="h3"
+                size="sm"
+                mt="10px"
+                textAlign="left"
+                lineHeight="1.8"
+              >
                 {article.subtitle}
               </Heading>
               <Box mt="4px">
@@ -114,7 +120,13 @@ const desktopMarkup = ({ article, slug, even }: IDesktopMarkup) => {
               <Heading as="h2" size="md" mt="10px" textAlign="left">
                 {article.title}
               </Heading>
-              <Heading as="h3" size="sm" mt="10px" textAlign="left">
+              <Heading
+                as="h3"
+                size="sm"
+                mt="10px"
+                textAlign="left"
+                lineHeight="1.8"
+              >
                 {article.subtitle}
               </Heading>
               <Box mt="4px">
@@ -161,7 +173,13 @@ const mobileMarkup = ({ article, slug }: IDesktopMarkup) => {
           <Heading as="h2" size="md" mt="10px" textAlign="left">
             {article.title}
           </Heading>
-          <Heading as="h3" size="sm" mt="10px" textAlign="left">
+          <Heading
+            as="h3"
+            size="sm"
+            mt="10px"
+            textAlign="left"
+            lineHeight="1.8"
+          >
             {article.subtitle}
           </Heading>
           <Box mt="4px">
