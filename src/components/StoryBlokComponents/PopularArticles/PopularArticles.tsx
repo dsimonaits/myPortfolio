@@ -35,8 +35,6 @@ const PopularArticles = ({ blok }: PopularArticlesStoryblok) => {
                       <SectionTag
                         name={blok.title}
                         style={{
-                          size: ["md", "md", "lg"],
-                          p: "20px",
                           mx: { tagPosition },
                           mb: "-10px",
                         }}
