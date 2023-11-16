@@ -9,7 +9,6 @@ import { INode } from "../../../types/types"
 import Section from "../../Section/Section"
 import MainContainer from "../../Container/Container"
 import BlurContainer from "../../BlurContainer/BlurContainer"
-import { Tag } from "@chakra-ui/tag"
 import { Box, Link, Text, VStack } from "@chakra-ui/react"
 import getCurrentDateInfo from "../../CurrentDateInfo/CurrentDateInfo"
 
