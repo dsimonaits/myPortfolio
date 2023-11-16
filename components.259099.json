@@ -256,6 +256,29 @@
       "component_group_name": "header"
     },
     {
+      "name": "mySkills",
+      "display_name": null,
+      "created_at": "2023-11-16T10:02:35.586Z",
+      "updated_at": "2023-11-16T10:02:48.728Z",
+      "id": 4892765,
+      "schema": {
+        "mySkills": {
+          "type": "bloks"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "mySkills",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null
+    },
+    {
       "name": "page",
       "display_name": null,
       "created_at": "2023-10-25T20:12:13.245Z",
