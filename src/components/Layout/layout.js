@@ -12,6 +12,7 @@ import About from "../StoryBlokComponents/About/About"
 import Article from "../StoryBlokComponents/Article/Article"
 import AllArticles from "../StoryBlokComponents/AllArticles/AllArticles"
 import MainContainer from "../Container/Container"
+import MySkills from "../StoryBlokComponents/MySkills/MySkills.tsx"
 import SkillsList from "../StoryBlokComponents/SkillsList/SkillsList"
 import Skill from "../StoryBlokComponents/Skill/Skill"
 import SocialLink from "../StoryBlokComponents/SocialLink/SocialLink.tsx"
@@ -32,6 +33,7 @@ storyblokInit({
     skill: Skill,
     socialLink: SocialLink,
     "popular-articles": PopularArticles,
+    mySkills: MySkills,
   },
 })
 
