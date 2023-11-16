@@ -62,8 +62,6 @@ const Footer = () => {
           <SectionTag
             name={footerContent.footer[0].heading}
             style={{
-              size: "lg",
-              p: "20px",
               mb: "-20px",
               mx: "auto",
               zIndex: "99",
