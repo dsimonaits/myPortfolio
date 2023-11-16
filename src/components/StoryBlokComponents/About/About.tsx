@@ -17,6 +17,7 @@ import Section from "../../Section/Section"
 import NoImage from "../../../images/no-image.png"
 import { AboutStoryblok } from "../../../../component-types-sb"
 import BlurContainer from "../../BlurContainer/BlurContainer"
+import SectionTag from "../../SectionTag/SectionTag"
 
 const About = ({ blok }: AboutStoryblok) => {
   const avatarFallback = NoImage
@@ -59,13 +60,11 @@ const About = ({ blok }: AboutStoryblok) => {
               zIndex="99"
             />
             <Tag size="lg" mt="15px" zIndex="99">
-              {blok.title}
+              {blok.name}
             </Tag>
           </Box>
           <VStack flex="1">
-            <Tag size="lg" p="20px" mb="-20px" zIndex="99">
-              About Me
-            </Tag>
+            <SectionTag name={blok.title} />
             <BlurContainer>
               <Box>{render(aboutMe)}</Box>
               <Accordion allowToggle>
