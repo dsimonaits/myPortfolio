@@ -11,8 +11,6 @@ import MainContainer from "../../Container/Container"
 import Section from "../../Section/Section"
 
 const PopularArticles = ({ blok }: PopularArticlesStoryblok) => {
-  console.log(blok)
-
   const isMobile = useMediaQuery({ maxWidth: 480 })
 
   const tagPosition = isMobile ? "auto" : "0"
