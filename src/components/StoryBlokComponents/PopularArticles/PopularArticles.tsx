@@ -5,10 +5,11 @@ import {
   PopularArticlesStoryblok,
 } from "../../../../component-types-sb"
 import ArticleTeaser from "../ArticleTeaser/ArticleTeaser"
-import { Box, HStack, Tag, VStack } from "@chakra-ui/react"
+import { Box, HStack, VStack } from "@chakra-ui/react"
 import { useMediaQuery } from "react-responsive"
 import MainContainer from "../../Container/Container"
 import Section from "../../Section/Section"
+import SectionTag from "../../SectionTag/SectionTag"
 
 const PopularArticles = ({ blok }: PopularArticlesStoryblok) => {
   const isMobile = useMediaQuery({ maxWidth: 480 })
@@ -31,14 +32,15 @@ const PopularArticles = ({ blok }: PopularArticlesStoryblok) => {
                         articlePositionEven && !isMobile ? "left" : "right"
                       }
                     >
-                      <Tag
-                        size={["md", "md", "lg"]}
-                        p="20px"
-                        mx={tagPosition}
-                        mb="-10px"
-                      >
-                        Featured project
-                      </Tag>
+                      <SectionTag
+                        name={blok.title}
+                        style={{
+                          size: ["md", "md", "lg"],
+                          p: "20px",
+                          mx: { tagPosition },
+                          mb: "-10px",
+                        }}
+                      />
                     </HStack>
                     <ArticleTeaser
                       article={article.content}
