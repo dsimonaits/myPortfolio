@@ -11,7 +11,6 @@ import {
 import { StoryblokComponent } from "gatsby-source-storyblok"
 
 const MySkills = ({ blok }: MySkillsStoryblok) => {
-  console.log(blok)
   return (
     <Section id="skills">
       <MainContainer style={{ justifyContent: "center" }}>
@@ -28,7 +27,7 @@ const MySkills = ({ blok }: MySkillsStoryblok) => {
           zIndex="0"
         />
         <VStack>
-          <SectionTag name={"My Skills"} />
+          <SectionTag name={blok.title} />
           <BlurContainer>
             <List spacing="40px">
               {blok.mySkills.map((blok: SkillsListStoryblok) => (
