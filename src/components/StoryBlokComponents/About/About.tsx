@@ -5,7 +5,6 @@ import {
   Box,
   Image,
   Stack,
-  Tag,
   Accordion,
   AccordionItem,
   AccordionButton,
@@ -28,7 +27,7 @@ const About = ({ blok }: AboutStoryblok) => {
       <MainContainer>
         <Stack
           direction={["column", "column", "row"]}
-          gap={["20px", "40px", "40px"]}
+          // gap={["40px", "40px", "40px"]}
         >
           <Box
             position="relative"
@@ -59,12 +58,26 @@ const About = ({ blok }: AboutStoryblok) => {
               boxSize={["200px", "200px", "300px"]}
               zIndex="99"
             />
-            <Tag size="lg" mt="15px" zIndex="99">
+            <SectionTag
+              name={blok.name}
+              style={{
+                my: "20px",
+                zIndex: "99",
+                p: ["5px", "10px", "10px"],
+              }}
+            />
+            {/* <Tag >
               {blok.name}
-            </Tag>
+            </Tag> */}
           </Box>
           <VStack flex="1">
-            <SectionTag name={blok.title} />
+            <SectionTag
+              name={blok.title}
+              style={{
+                mb: "-20px",
+                zIndex: "99",
+              }}
+            />
             <BlurContainer>
               <Box>{render(aboutMe)}</Box>
               <Accordion allowToggle>
