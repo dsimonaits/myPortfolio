@@ -16,6 +16,7 @@ import getCurrentDateInfo from "../../CurrentDateInfo/CurrentDateInfo"
 import { AiFillGithub } from "react-icons/ai"
 import Contact from "../Contact/Contact"
 import SocialLinkList from "../SocialLinkList/SocialLinkList"
+import SectionTag from "../../SectionTag/SectionTag"
 
 const Footer = () => {
   const { footer } = useStaticQuery(graphql`
@@ -59,9 +60,16 @@ const Footer = () => {
             filter="blur(70px)"
             zIndex="0"
           />
-          <Tag size="lg" p="20px" mb="-20px" mx="auto" zIndex="99">
-            Contact Me
-          </Tag>
+          <SectionTag
+            name={footerContent.footer[0].heading}
+            style={{
+              size: "lg",
+              p: "20px",
+              mb: "-20px",
+              mx: "auto",
+              zIndex: "99",
+            }}
+          />
           <BlurContainer>
             <Contact blok={contactMe} />
             <SocialLinkList blok={socialLinks} />
