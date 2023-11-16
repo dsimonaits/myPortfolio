@@ -22,6 +22,7 @@ export interface RichtextStoryblok {
 
 export interface AboutStoryblok {
   myImage?: AssetStoryblok;
+  name?: string;
   title?: string;
   aboutMe?: RichtextStoryblok;
   moreAbout?: RichtextStoryblok;
@@ -189,6 +190,7 @@ export interface MenuLinkStoryblok {
 }
 
 export interface MySkillsStoryblok {
+  title?: string;
   mySkills?: (
     | AboutStoryblok
     | AllArticlesStoryblok
@@ -236,6 +238,7 @@ export interface PageStoryblok {
 }
 
 export interface PopularArticlesStoryblok {
+  title?: string;
   articles?: (StoryblokStory<ArticleStoryblok> | string)[];
   _uid: string;
   component: "popular-articles";
@@ -251,6 +254,7 @@ export interface SkillStoryblok {
 }
 
 export interface SkillsListStoryblok {
+  listName?: string;
   list?: (
     | AboutStoryblok
     | AllArticlesStoryblok

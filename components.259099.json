@@ -4,7 +4,7 @@
       "name": "about",
       "display_name": null,
       "created_at": "2023-11-03T13:58:15.064Z",
-      "updated_at": "2023-11-06T21:23:51.693Z",
+      "updated_at": "2023-11-16T11:47:34.091Z",
       "id": 4831959,
       "schema": {
         "myImage": {
@@ -15,18 +15,23 @@
           "asset_folder_id": 330473,
           "pos": 0
         },
-        "title": {
+        "name": {
           "type": "text",
           "pos": 1
+        },
+        "title": {
+          "type": "text",
+          "pos": 2
         },
         "aboutMe": {
           "type": "richtext",
           "description": "",
           "default_value": "",
-          "pos": 2
+          "pos": 3
         },
         "moreAbout": {
-          "type": "richtext"
+          "type": "richtext",
+          "pos": 4
         }
       },
       "image": null,
@@ -259,11 +264,16 @@
       "name": "mySkills",
       "display_name": null,
       "created_at": "2023-11-16T10:02:35.586Z",
-      "updated_at": "2023-11-16T10:02:48.728Z",
+      "updated_at": "2023-11-16T11:43:49.268Z",
       "id": 4892765,
       "schema": {
+        "title": {
+          "type": "text",
+          "pos": 0
+        },
         "mySkills": {
-          "type": "bloks"
+          "type": "bloks",
+          "pos": 1
         }
       },
       "image": null,
@@ -306,9 +316,13 @@
       "name": "popular-articles",
       "display_name": null,
       "created_at": "2023-11-14T12:59:23.622Z",
-      "updated_at": "2023-11-14T13:00:48.322Z",
+      "updated_at": "2023-11-16T11:50:49.588Z",
       "id": 4880726,
       "schema": {
+        "title": {
+          "type": "text",
+          "pos": 0
+        },
         "articles": {
           "type": "options",
           "display_name": "Popular Articles",
@@ -318,7 +332,8 @@
             "article"
           ],
           "min_options": "",
-          "max_options": "3"
+          "max_options": "3",
+          "pos": 1
         }
       },
       "image": null,
@@ -366,11 +381,16 @@
       "name": "skills-list",
       "display_name": null,
       "created_at": "2023-11-06T17:22:14.286Z",
-      "updated_at": "2023-11-06T17:22:59.756Z",
+      "updated_at": "2023-11-16T10:30:21.173Z",
       "id": 4843468,
       "schema": {
+        "listName": {
+          "type": "text",
+          "pos": 0
+        },
         "list": {
-          "type": "bloks"
+          "type": "bloks",
+          "pos": 1
         }
       },
       "image": null,
