@@ -4,7 +4,6 @@ export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
     <link
       key="poppins"
-      rel="preload"
       href="/fonts/Poppins/Poppins-Regular.ttf"
       as="font"
       type="font/ttf"
@@ -12,7 +11,6 @@ export const onRenderBody = ({ setHeadComponents }) => {
     />,
     <link
       key="poppins-medium"
-      rel="preload"
       href="/fonts/Poppins/Poppins-Medium.ttf"
       as="font"
       type="font/ttf"
@@ -20,7 +18,6 @@ export const onRenderBody = ({ setHeadComponents }) => {
     />,
     <link
       key="poppins-bold"
-      rel="preload"
       href="/fonts/Poppins/Poppins-Bold.ttf"
       as="font"
       type="font/ttf"
@@ -28,7 +25,6 @@ export const onRenderBody = ({ setHeadComponents }) => {
     />,
     <link
       key="poppins-extra-bold"
-      rel="preload"
       href="/fonts/Poppins/Poppins-ExtraBold.ttf"
       as="font"
       type="font/ttf"
@@ -37,7 +33,6 @@ export const onRenderBody = ({ setHeadComponents }) => {
     // Roboto
     <link
       key="roboto-light"
-      rel="preload"
       href="/fonts/Roboto/Roboto-Light.ttf"
       as="font"
       type="font/ttf"
@@ -45,7 +40,6 @@ export const onRenderBody = ({ setHeadComponents }) => {
     />,
     <link
       key="roboto-regular"
-      rel="preload"
       href="/fonts/Roboto/Roboto-Regular.ttf"
       as="font"
       type="font/ttf"
@@ -53,7 +47,6 @@ export const onRenderBody = ({ setHeadComponents }) => {
     />,
     <link
       key="roboto-medium"
-      rel="preload"
       href="/fonts/Roboto/Roboto-Medium.ttf"
       as="font"
       type="font/ttf"
@@ -61,7 +54,6 @@ export const onRenderBody = ({ setHeadComponents }) => {
     />,
     <link
       key="roboto-bold"
-      rel="preload"
       href="/fonts/Roboto/Roboto-Bold.ttf"
       as="font"
       type="font/ttf"
